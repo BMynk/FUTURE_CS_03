@@ -1,0 +1,6 @@
+5. Input Validation
+   - Test 1 (empty parameter): Returned user 1 data (unexpected – defaulted to ID 1 instead of rejecting)
+   - Test 2 (long ID): 404 Not Found (good – rejects invalid input)
+   - Test 3 (XSS / special characters): 404 Not Found (good – rejects invalid input)
+
+   Conclusion: Partial input validation exists, but empty parameter handling is weak.
